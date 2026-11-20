@@ -4,119 +4,212 @@
 <title>Videos · Recompensas y Venta con varias dietas · getUP!</title>
 <style>
   body{margin:0;background:#F7F2E9;color:#221E20;font-family:system-ui,Segoe UI,sans-serif}
-  header{padding:28px 32px 8px} h1{margin:0;font-size:26px} header p{margin:6px 0 0;color:#5E5759}
+  header{padding:28px 32px 8px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px}
+  h1{margin:0;font-size:26px} header p{margin:6px 0 0;color:#5E5759}
   section{padding:12px 32px 20px} h2{margin:18px 0 2px;font-size:20px} .para{margin:0 0 12px;color:#5E5759;font-size:14px}
+  .cabeza{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:4px}
   .rejilla{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start}
-  .tarjeta{background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(34,30,32,.10);overflow:hidden}
+  .tarjeta{background:#fff;border-radius:16px;box-shadow:0 6px 18px rgba(34,30,32,.10);overflow:hidden;max-width:100%}
   .tarjeta.horizontal{width:560px} .tarjeta.vertical{width:270px}
   video{display:block;width:100%;background:#221E20}
-  .pie{display:flex;justify-content:space-between;gap:8px;padding:10px 14px;font-size:14px} .pie span{color:#5E5759;white-space:nowrap}
-  .vacio{color:#5E5759;font-style:italic}
+  .pie{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;font-size:14px}
+  .txt{display:flex;flex-direction:column;gap:2px;min-width:0} .txt span{color:#5E5759;font-size:13px}
+  .bajar{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;padding:8px 12px;border:0;border-radius:10px;background:#221E20;color:#fff;
+         font:600 13px system-ui,Segoe UI,sans-serif;text-decoration:none;cursor:pointer}
+  .bajar:hover{background:#3a3436} .bajar.suave{background:#fff;color:#221E20;box-shadow:inset 0 0 0 1.5px #221E20}
+  .bajar.suave:hover{background:#EFE7DA} .bajar.grande{padding:11px 16px;font-size:14px}
+  .vertical .bajar span{display:none} .vertical .bajar{padding:9px}
+  .aviso{font-size:12px;color:#5E5759;margin-top:6px} .vacio{color:#5E5759;font-style:italic}
+  @media (max-width:640px){header,section{padding-left:14px;padding-right:14px} .tarjeta.vertical{width:calc(50% - 9px)}}
 </style></head><body>
-<header><h1>Videos · un video por acción</h1><p>23 video(s) listos · voz de Camila · se regenera con generar_indice.py</p></header>
+<header>
+  <div><h1>Videos · un video por acción</h1><p>23 videos · puedes verlos aquí o descargarlos</p></div>
+  <div><button class="bajar grande" type="button" onclick="bajarVarios('a.bajar')"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar todos (23)</span></button>
+  <p class="aviso">Si el navegador pregunta, permite «descargar varios archivos».</p></div>
+</header>
 
   <section>
-    <h2>Portal del cliente</h2><p class="para">Celular y PC · para los clientes · 12 video(s)</p>
+    <div class="cabeza"><div><h2>Portal del cliente</h2><p class="para">Celular y PC · para los clientes · 12 video(s)</p></div><button class="bajar suave" type="button" onclick="bajarVarios('[data-grupo=&quot;0&quot;]')"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar esta sección (12)</span></button></div>
     <div class="rejilla">
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal/01-canjear-paquete-de-suspension-celular.mp4"></video>
-        <div class="pie"><b>01. Canjear paquete de suspension</b><span>Celular · 1:49</span></div>
+        <div class="pie">
+          <div class="txt"><b>01. Canjear paquete de suspensión</b><span>Celular · 1:49 · 10 MB</span></div>
+          <a class="bajar" href="portal/01-canjear-paquete-de-suspension-celular.mp4" download="01-canjear-paquete-de-suspension-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal/01-canjear-paquete-de-suspension-pc.mp4"></video>
-        <div class="pie"><b>01. Canjear paquete de suspension</b><span>Computadora · 1:49</span></div>
+        <div class="pie">
+          <div class="txt"><b>01. Canjear paquete de suspensión</b><span>Computadora · 1:49 · 11 MB</span></div>
+          <a class="bajar" href="portal/01-canjear-paquete-de-suspension-pc.mp4" download="01-canjear-paquete-de-suspension-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal/02-canjear-comida-para-tu-plan-celular.mp4"></video>
-        <div class="pie"><b>02. Canjear comida para tu plan</b><span>Celular · 1:33</span></div>
+        <div class="pie">
+          <div class="txt"><b>02. Canjear comida para tu plan</b><span>Celular · 1:33 · 8 MB</span></div>
+          <a class="bajar" href="portal/02-canjear-comida-para-tu-plan-celular.mp4" download="02-canjear-comida-para-tu-plan-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal/02-canjear-comida-para-tu-plan-pc.mp4"></video>
-        <div class="pie"><b>02. Canjear comida para tu plan</b><span>Computadora · 1:33</span></div>
+        <div class="pie">
+          <div class="txt"><b>02. Canjear comida para tu plan</b><span>Computadora · 1:33 · 9 MB</span></div>
+          <a class="bajar" href="portal/02-canjear-comida-para-tu-plan-pc.mp4" download="02-canjear-comida-para-tu-plan-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal/03-regalar-una-comida-a-un-amigo-celular.mp4"></video>
-        <div class="pie"><b>03. Regalar una comida a un amigo</b><span>Celular · 1:33</span></div>
+        <div class="pie">
+          <div class="txt"><b>03. Regalar una comida a un amigo</b><span>Celular · 1:33 · 8 MB</span></div>
+          <a class="bajar" href="portal/03-regalar-una-comida-a-un-amigo-celular.mp4" download="03-regalar-una-comida-a-un-amigo-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal/03-regalar-una-comida-a-un-amigo-pc.mp4"></video>
-        <div class="pie"><b>03. Regalar una comida a un amigo</b><span>Computadora · 1:33</span></div>
+        <div class="pie">
+          <div class="txt"><b>03. Regalar una comida a un amigo</b><span>Computadora · 1:33 · 8 MB</span></div>
+          <a class="bajar" href="portal/03-regalar-una-comida-a-un-amigo-pc.mp4" download="03-regalar-una-comida-a-un-amigo-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal-2/04-canjear-codigo-de-regalo-de-un-amigo-celular.mp4"></video>
-        <div class="pie"><b>04. Canjear codigo de regalo de un amigo</b><span>Celular · 1:43</span></div>
+        <div class="pie">
+          <div class="txt"><b>04. Canjear código de regalo de un amigo</b><span>Celular · 1:43 · 11 MB</span></div>
+          <a class="bajar" href="portal-2/04-canjear-codigo-de-regalo-de-un-amigo-celular.mp4" download="04-canjear-codigo-de-regalo-de-un-amigo-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal-2/04-canjear-codigo-de-regalo-de-un-amigo-pc.mp4"></video>
-        <div class="pie"><b>04. Canjear codigo de regalo de un amigo</b><span>Computadora · 1:43</span></div>
+        <div class="pie">
+          <div class="txt"><b>04. Canjear código de regalo de un amigo</b><span>Computadora · 1:43 · 11 MB</span></div>
+          <a class="bajar" href="portal-2/04-canjear-codigo-de-regalo-de-un-amigo-pc.mp4" download="04-canjear-codigo-de-regalo-de-un-amigo-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal-2/05-canje-con-un-aliado-celular.mp4"></video>
-        <div class="pie"><b>05. Canje con un aliado</b><span>Celular · 1:46</span></div>
+        <div class="pie">
+          <div class="txt"><b>05. Canje con un aliado</b><span>Celular · 1:46 · 11 MB</span></div>
+          <a class="bajar" href="portal-2/05-canje-con-un-aliado-celular.mp4" download="05-canje-con-un-aliado-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal-2/05-canje-con-un-aliado-pc.mp4"></video>
-        <div class="pie"><b>05. Canje con un aliado</b><span>Computadora · 1:46</span></div>
+        <div class="pie">
+          <div class="txt"><b>05. Canje con un aliado</b><span>Computadora · 1:46 · 11 MB</span></div>
+          <a class="bajar" href="portal-2/05-canje-con-un-aliado-pc.mp4" download="05-canje-con-un-aliado-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta vertical">
         <video controls preload="metadata" src="portal-venta-combinada/06-tu-plan-con-varias-dietas-celular.mp4"></video>
-        <div class="pie"><b>06. Tu plan con varias dietas</b><span>Celular · 1:47</span></div>
+        <div class="pie">
+          <div class="txt"><b>06. Tu plan con varias dietas</b><span>Celular · 1:47 · 11 MB</span></div>
+          <a class="bajar" href="portal-venta-combinada/06-tu-plan-con-varias-dietas-celular.mp4" download="06-tu-plan-con-varias-dietas-celular.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="portal-venta-combinada/06-tu-plan-con-varias-dietas-pc.mp4"></video>
-        <div class="pie"><b>06. Tu plan con varias dietas</b><span>Computadora · 1:47</span></div>
+        <div class="pie">
+          <div class="txt"><b>06. Tu plan con varias dietas</b><span>Computadora · 1:47 · 12 MB</span></div>
+          <a class="bajar" href="portal-venta-combinada/06-tu-plan-con-varias-dietas-pc.mp4" download="06-tu-plan-con-varias-dietas-pc.mp4" data-grupo="0" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article></div>
   </section>
   <section>
-    <h2>Recompensas en el ERP y el POS</h2><p class="para">Computadora · para el administrador y la asesora de ventas · 6 video(s)</p>
+    <div class="cabeza"><div><h2>Recompensas en el ERP y el POS</h2><p class="para">Computadora · para el administrador y la asesora de ventas · 6 video(s)</p></div><button class="bajar suave" type="button" onclick="bajarVarios('[data-grupo=&quot;1&quot;]')"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar esta sección (6)</span></button></div>
     <div class="rejilla">
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/07-configurar-comidas-y-juegos-de-comida.mp4"></video>
-        <div class="pie"><b>07. Configurar comidas y juegos de comida</b><span>Computadora · 1:59</span></div>
+        <div class="pie">
+          <div class="txt"><b>07. Configurar comidas y juegos de comida</b><span>Computadora · 1:59 · 14 MB</span></div>
+          <a class="bajar" href="erp-recompensas/07-configurar-comidas-y-juegos-de-comida.mp4" download="07-configurar-comidas-y-juegos-de-comida.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/08-configurar-paquetes-de-suspension.mp4"></video>
-        <div class="pie"><b>08. Configurar paquetes de suspension</b><span>Computadora · 1:46</span></div>
+        <div class="pie">
+          <div class="txt"><b>08. Configurar paquetes de suspensión</b><span>Computadora · 1:46 · 10 MB</span></div>
+          <a class="bajar" href="erp-recompensas/08-configurar-paquetes-de-suspension.mp4" download="08-configurar-paquetes-de-suspension.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/09-configurar-canje-con-un-aliado.mp4"></video>
-        <div class="pie"><b>09. Configurar canje con un aliado</b><span>Computadora · 2:04</span></div>
+        <div class="pie">
+          <div class="txt"><b>09. Configurar canje con un aliado</b><span>Computadora · 2:04 · 13 MB</span></div>
+          <a class="bajar" href="erp-recompensas/09-configurar-canje-con-un-aliado.mp4" download="09-configurar-canje-con-un-aliado.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/10-pos-vender-paquete-de-suspension.mp4"></video>
-        <div class="pie"><b>10. POS: vender paquete de suspension</b><span>Computadora · 1:59</span></div>
+        <div class="pie">
+          <div class="txt"><b>10. POS: vender paquete de suspensión</b><span>Computadora · 1:59 · 13 MB</span></div>
+          <a class="bajar" href="erp-recompensas/10-pos-vender-paquete-de-suspension.mp4" download="10-pos-vender-paquete-de-suspension.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/11-pos-canjear-codigo-de-un-amigo.mp4"></video>
-        <div class="pie"><b>11. POS: canjear codigo de un amigo</b><span>Computadora · 1:40</span></div>
+        <div class="pie">
+          <div class="txt"><b>11. POS: canjear código de un amigo</b><span>Computadora · 1:40 · 11 MB</span></div>
+          <a class="bajar" href="erp-recompensas/11-pos-canjear-codigo-de-un-amigo.mp4" download="11-pos-canjear-codigo-de-un-amigo.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-recompensas/12-canje-con-un-aliado-avisado-y-usado.mp4"></video>
-        <div class="pie"><b>12. Canje con un aliado avisado y usado</b><span>Computadora · 1:39</span></div>
+        <div class="pie">
+          <div class="txt"><b>12. Canje con un aliado avisado y usado</b><span>Computadora · 1:39 · 10 MB</span></div>
+          <a class="bajar" href="erp-recompensas/12-canje-con-un-aliado-avisado-y-usado.mp4" download="12-canje-con-un-aliado-avisado-y-usado.mp4" data-grupo="1" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article></div>
   </section>
   <section>
-    <h2>Venta con varias dietas</h2><p class="para">Computadora · para la asesora de ventas · 5 video(s)</p>
+    <div class="cabeza"><div><h2>Venta con varias dietas</h2><p class="para">Computadora · para la asesora de ventas · 5 video(s)</p></div><button class="bajar suave" type="button" onclick="bajarVarios('[data-grupo=&quot;2&quot;]')"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar esta sección (5)</span></button></div>
     <div class="rejilla">
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-venta-combinada/13-venta-varias-dietas-por-semanas.mp4"></video>
-        <div class="pie"><b>13. Venta varias dietas por semanas</b><span>Computadora · 1:56</span></div>
+        <div class="pie">
+          <div class="txt"><b>13. Venta varias dietas por semanas</b><span>Computadora · 1:56 · 16 MB</span></div>
+          <a class="bajar" href="erp-venta-combinada/13-venta-varias-dietas-por-semanas.mp4" download="13-venta-varias-dietas-por-semanas.mp4" data-grupo="2" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-venta-combinada/14-venta-varias-dietas-por-dias.mp4"></video>
-        <div class="pie"><b>14. Venta varias dietas por dias</b><span>Computadora · 2:05</span></div>
+        <div class="pie">
+          <div class="txt"><b>14. Venta varias dietas por días</b><span>Computadora · 2:05 · 15 MB</span></div>
+          <a class="bajar" href="erp-venta-combinada/14-venta-varias-dietas-por-dias.mp4" download="14-venta-varias-dietas-por-dias.mp4" data-grupo="2" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-venta-combinada/15-juntar-ventas.mp4"></video>
-        <div class="pie"><b>15. Juntar ventas</b><span>Computadora · 1:55</span></div>
+        <div class="pie">
+          <div class="txt"><b>15. Juntar ventas</b><span>Computadora · 1:55 · 15 MB</span></div>
+          <a class="bajar" href="erp-venta-combinada/15-juntar-ventas.mp4" download="15-juntar-ventas.mp4" data-grupo="2" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-venta-combinada/16-cancelar-un-plan-y-adelantar.mp4"></video>
-        <div class="pie"><b>16. Cancelar un plan y adelantar</b><span>Computadora · 1:56</span></div>
+        <div class="pie">
+          <div class="txt"><b>16. Cancelar un plan y adelantar</b><span>Computadora · 1:56 · 14 MB</span></div>
+          <a class="bajar" href="erp-venta-combinada/16-cancelar-un-plan-y-adelantar.mp4" download="16-cancelar-un-plan-y-adelantar.mp4" data-grupo="2" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article>
       <article class="tarjeta horizontal">
         <video controls preload="metadata" src="erp-venta-combinada/17-pasar-de-semanas-a-dias-y-al-reves.mp4"></video>
-        <div class="pie"><b>17. Pasar de semanas a dias y al reves</b><span>Computadora · 2:23</span></div>
+        <div class="pie">
+          <div class="txt"><b>17. Pasar de semanas a días y al revés</b><span>Computadora · 2:23 · 15 MB</span></div>
+          <a class="bajar" href="erp-venta-combinada/17-pasar-de-semanas-a-dias-y-al-reves.mp4" download="17-pasar-de-semanas-a-dias-y-al-reves.mp4" data-grupo="2" title="Descargar este video"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg><span>Descargar</span></a>
+        </div>
       </article></div>
   </section>
+<script>
+  // Descarga uno por uno (con una pausa corta) para que el navegador no corte la lista.
+  function bajarVarios(selector) {
+    const enlaces = Array.from(document.querySelectorAll(selector)).filter(a => a.tagName === 'A');
+    enlaces.forEach((a, i) => setTimeout(() => {
+      const t = document.createElement('a');
+      t.href = a.getAttribute('href'); t.download = a.getAttribute('download'); t.style.display = 'none';
+      document.body.appendChild(t); t.click(); t.remove();
+    }, i * 900));
+  }
+</script>
 </body></html>
