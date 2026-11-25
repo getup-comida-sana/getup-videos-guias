@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>getUP! · Avisos por WhatsApp con tarjeta</title>
+<style>
+  :root { --negro:#221E20; --crema:#F7F2E9; --kraft:#E4D4BA; --gris:#5E524C; --borde:#E3D9C8; --magenta:#E22084; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--crema); color: var(--negro); font: 15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 24px 16px 8px; max-width: 520px; margin: 0 auto; }
+  h1 { font-size: 26px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.3px; }
+  header p { margin: 0 0 6px; color: var(--gris); font-size: 14px; }
+  main { max-width: 520px; margin: 0 auto; padding: 0 12px 48px; }
+  .evento { background: #fff; border-radius: 24px; padding: 14px 12px 16px; margin: 16px 0; border: 1px solid var(--borde); }
+  h2 { font-size: 17px; margin: 2px 4px 2px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .chip { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; border-radius: 999px; padding: 3px 9px; }
+  .chip.portal { background: var(--kraft); color: var(--negro); }
+  .chip.mia { background: var(--negro); color: #fff; }
+  .meta { margin: 0 4px 10px; color: var(--gris); font-size: 12.5px; }
+  .meta a { color: var(--gris); }
+  .chat { background: #EFE7DD; border-radius: 16px; padding: 12px 10px; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .burbuja { background: #D9FDD3; border-radius: 12px 12px 4px 12px; padding: 4px 4px 6px; max-width: 88%; box-shadow: 0 1px 0 rgba(0,0,0,.08); position: relative; }
+  .burbuja img { display: block; width: 100%; height: auto; border-radius: 9px; }
+  .burbuja p { margin: 6px 8px 8px; font-size: 14.5px; line-height: 1.4; overflow-wrap: anywhere; }
+  .hora { position: absolute; right: 9px; bottom: 4px; font-size: 10.5px; color: #667781; }
+  .nota { margin: 8px 4px 0; font-size: 12.5px; color: var(--gris); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Avisos por WhatsApp con tarjeta</h1>
+  <p>31 eventos con datos inventados: 20 acciones del cliente en el portal (mismo mensaje que el correo) y 11 mensajes de Mía.</p>
+  <p>Cada tarjeta va con su texto de pie, como se vería en el chat.</p>
+</header>
+<main>
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Suspender días</h2>
+    <p class="meta">evento portal_suspension del ERP · tarjeta «suspension» · <a href="01-suspension.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="01-suspension.png" alt="Tus días quedaron suspendidos" loading="lazy"><p><b>Tus días quedaron suspendidos</b><br><br>Hola, Valeria. Tus días mié 03/12 y jue 04/12 quedaron suspendidos correctamente.<br><br>Los recibes al final de tu plan: lun 05/01 y mar 06/01.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Volver a recibir un día</h2>
+    <p class="meta">evento portal_reactivacion del ERP · tarjeta «reactivacion» · <a href="02-reactivacion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="02-reactivacion.png" alt="Tu día quedó reactivado" loading="lazy"><p><b>Tu día quedó reactivado</b><br><br>Hola, Valeria. Tu día jue 04/12 quedó reactivado correctamente. Lo recibes como siempre.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Volver a recibir y suspender a la vez</h2>
+    <p class="meta">evento portal_suspension del ERP · tarjeta «suspension» · <a href="03-suspension.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="03-suspension.png" alt="Tus días quedaron actualizados" loading="lazy"><p><b>Tus días quedaron actualizados</b><br><br>Hola, Valeria. Vuelves a recibir tu día jue 04/12. Tu día vie 05/12 quedó suspendido.<br><br>Lo recibes al final de tu plan: mar 06/01.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Cambiar la dirección</h2>
+    <p class="meta">evento portal_direccion del ERP · tarjeta «direccion» · <a href="04-direccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="04-direccion.png" alt="Cambiaste tu dirección de entrega" loading="lazy"><p><b>Cambiaste tu dirección de entrega</b><br><br>Hola, Valeria. Desde el lun 08/12 tus entregas irán a OFICINA (Av. Los Pinos 450, San Isidro).<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Cambiar el horario</h2>
+    <p class="meta">evento portal_horario del ERP · tarjeta «horario» · <a href="05-horario.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="05-horario.png" alt="Cambiaste tu horario de entrega" loading="lazy"><p><b>Cambiaste tu horario de entrega</b><br><br>Hola, Valeria. Tu día mié 03/12 se entregará entre 9:00 y 13:00.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Cambiar los días de entrega</h2>
+    <p class="meta">evento portal_dias_entrega del ERP · tarjeta «dias_entrega» · <a href="06-dias_entrega.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="06-dias_entrega.png" alt="Cambiaste tus días de entrega" loading="lazy"><p><b>Cambiaste tus días de entrega</b><br><br>Hola, Valeria. Tus días de entrega ahora son lunes, miércoles y viernes.<br><br>• Lunes: CASA<br>• Miércoles: OFICINA<br>• Viernes: CASA<br><br>Tu horario ahora es entre 6:00 y 9:00.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Reportar una incidencia</h2>
+    <p class="meta">evento portal_incidencia del ERP · tarjeta «incidencia» · <a href="07-incidencia.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="07-incidencia.png" alt="Recibimos tu incidencia" loading="lazy"><p><b>Recibimos tu incidencia</b><br><br>Hola, Valeria. Recibimos tu incidencia del mar 02/12. Tu asesora la revisará y te avisará en la app.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Pedir la balanza</h2>
+    <p class="meta">evento balanza_solicitada del ERP · tarjeta «balanza» · <a href="08-balanza.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="08-balanza.png" alt="Recibimos tu solicitud de balanza" loading="lazy"><p><b>Recibimos tu solicitud de balanza</b><br><br>Hola, Valeria. Recibimos tu solicitud de balanza BAL-0057. Te la llevamos el jue 04/12.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Comprobante de excepciones</h2>
+    <p class="meta">evento portal_excepcion_pago del ERP · tarjeta «pago» · <a href="09-pago.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="09-pago.png" alt="Recibimos tu comprobante" loading="lazy"><p><b>Recibimos tu comprobante</b><br><br>Hola, Valeria. Recibimos tu comprobante de pago de excepciones. Tu asesora lo confirmará pronto.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Migrar el plan: falta el pago</h2>
+    <p class="meta">evento migracion del ERP · tarjeta «pago_pendiente» · <a href="10-pago_pendiente.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="10-pago_pendiente.png" alt="Falta el pago de tu nuevo plan" loading="lazy"><p><b>Falta el pago de tu nuevo plan</b><br><br>Hola, Valeria. Recibimos tu cambio de plan. Sube tu comprobante de S/ 120.00 hasta el mié 03/12 a las 11:59 p. m.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Migrar el plan: activo</h2>
+    <p class="meta">evento migracion del ERP · tarjeta «migracion» · <a href="11-migracion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="11-migracion.png" alt="Tu nuevo plan está activo" loading="lazy"><p><b>Tu nuevo plan está activo</b><br><br>Hola, Valeria. Tu nuevo plan SUB-2026-0960 empieza el lun 08/12.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Migrar el plan: comprobante</h2>
+    <p class="meta">evento migracion del ERP · tarjeta «pago» · <a href="12-pago.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="12-pago.png" alt="Recibimos tu comprobante" loading="lazy"><p><b>Recibimos tu comprobante</b><br><br>Hola, Valeria. Recibimos tu comprobante del cambio de plan. Tu pago está en revisión.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Migrar el plan: cancelado</h2>
+    <p class="meta">evento migracion del ERP · tarjeta «cancelado» · <a href="13-cancelado.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="13-cancelado.png" alt="Tu cambio de plan quedó cancelado" loading="lazy"><p><b>Tu cambio de plan quedó cancelado</b><br><br>Hola, Valeria. No pagaste la activación de tu plan; tu plan quedó cancelado. Tu saldo a favor sigue disponible.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Canjear un premio</h2>
+    <p class="meta">evento portal_canje del ERP · tarjeta «canje» · <a href="14-canje.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="14-canje.png" alt="Recibimos tu canje" loading="lazy"><p><b>Recibimos tu canje</b><br><br>Hola, Valeria. Canjeaste Almuerzo extra por 200 estrellas.<br><br>Te llega un almuerzo extra el vie 05/12.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Usar un código de regalo</h2>
+    <p class="meta">evento portal_canje del ERP · tarjeta «regalo» · <a href="15-regalo.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="15-regalo.png" alt="Agregamos tu regalo a tu plan" loading="lazy"><p><b>Agregamos tu regalo a tu plan</b><br><br>Hola, Valeria. Agregamos un almuerzo de regalo a tu plan el vie 05/12.<br><br>Ese día te llega almuerzo y cena.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Cambiar las excepciones</h2>
+    <p class="meta">evento portal_excepciones del ERP · tarjeta «excepciones» · <a href="16-excepciones.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="16-excepciones.png" alt="Actualizaste tus excepciones" loading="lazy"><p><b>Actualizaste tus excepciones</b><br><br>Hola, Valeria. Tus excepciones ahora son: gluten y maní.<br><br>La cocina aplica estos cambios desde el jue 04/12 (48 horas después de pedirlos).<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Editar una dirección</h2>
+    <p class="meta">evento portal_direcciones del ERP · tarjeta «direccion» · <a href="17-direccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="17-direccion.png" alt="Actualizaste tu dirección OFICINA" loading="lazy"><p><b>Actualizaste tu dirección OFICINA</b><br><br>Hola, Valeria. Tu dirección OFICINA ahora es Av. Los Pinos 450, San Isidro.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Borrar una dirección</h2>
+    <p class="meta">evento portal_direcciones del ERP · tarjeta «direccion» · <a href="18-direccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="18-direccion.png" alt="Borraste tu dirección GIMNASIO" loading="lazy"><p><b>Borraste tu dirección GIMNASIO</b><br><br>Hola, Valeria. Tu dirección GIMNASIO (Calle Las Flores 120, Surco) ya no está en tu cuenta.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Dirección principal</h2>
+    <p class="meta">evento portal_direcciones del ERP · tarjeta «direccion» · <a href="19-direccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="19-direccion.png" alt="Cambiaste tu dirección principal" loading="lazy"><p><b>Cambiaste tu dirección principal</b><br><br>Hola, Valeria. Tu dirección principal ahora es CASA.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip portal">Portal</span> Gestionar el plan de un familiar</h2>
+    <p class="meta">evento portal_familia_gestion del ERP · tarjeta «familia» · <a href="20-familia.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="20-familia.png" alt="Aceptaste que Martín Salas Vega gestione tu plan" loading="lazy"><p><b>Aceptaste que Martín Salas Vega gestione tu plan</b><br><br>Hola, Valeria. Aceptaste que Martín Salas Vega gestione tu plan. Desde ahora puede suspender tus días y cambiar tus direcciones u horarios.<br><br>Lo ves en tu portal: migetup.com<br>¿No fuiste tú? Respóndenos por aquí.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Reserva recibida (pago por confirmar)</h2>
+    <p class="meta">venta registrada · pago en validación · tarjeta «reserva» · <a href="21-reserva.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="21-reserva.png" alt="Recibimos tu pedido" loading="lazy"><p>¡Valeria, te damos la bienvenida a getUP! Este es tu plan:<br><b>Plan:</b> Almuerzo + Cena · 20 días<br><b>Dieta:</b> Low Carb<br><b>Comidas:</b> Almuerzo y cena<br><b>Entregas:</b> lunes a viernes, del lun 01/12 al vie 26/12 (20 entregas)<br><b>Horario:</b> 6:00 a 9:00 a. m.<br><b>Dirección:</b> Jr. Los Olivos 233, Miraflores<br><b>Precio base:</b> 20 días × S/ 44.50 = S/ 890<br><b>Total:</b> S/ 890<br><b>Comprobante:</b> Boleta (te llega cuando se confirme el pago)<br><b>Código:</b> SUB-2026-0953<br><br>Crea tu cuenta en el portal de getUP! con este link (vence en 24 h): https://migetup.com/registro?inv=…<br>Para crearla te pedimos un código de verificación: te llega por WhatsApp a este número.<br>Desde ahí ves tu calendario y tu menú, suspendes días, cambias tu dirección y gestionas tu plan.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Plan registrado (pago confirmado)</h2>
+    <p class="meta">venta registrada · pagada · tarjeta «venta_registrada» · <a href="22-venta_registrada.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="22-venta_registrada.png" alt="¡Tu plan quedó registrado!" loading="lazy"><p>¡Valeria, te damos la bienvenida a getUP! Este es tu plan:<br><b>Plan:</b> Almuerzo + Cena · 20 días<br><b>Dieta:</b> Low Carb<br><b>Entregas:</b> lunes a viernes, del lun 01/12 al vie 26/12 (20 entregas)<br><b>Precio base:</b> 20 días × S/ 44.50 = S/ 890<br><b>Saldo a favor:</b> −S/ 40<br><b>Total:</b> S/ 850<br><b>Comprobante:</b> Boleta B001-00418<br><b>Código:</b> SUB-2026-0953<br><br>Se descontó tu saldo a favor de <b>S/ 40</b>.<br><br>Entra a tu portal de getUP! con este link: https://migetup.com<br>Desde ahí ves tu calendario y tu menú, suspendes días, cambias tu dirección y gestionas tu plan.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Pago completado con tarjeta</h2>
+    <p class="meta">Mercado Pago aprobó el pago · tarjeta «pago_tarjeta» · <a href="23-pago_tarjeta.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="23-pago_tarjeta.png" alt="¡Pago completado!" loading="lazy"><p>¡Pago completado, Valeria! Recibimos tu pago de <b>S/ 890</b> con tarjeta.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Pago confirmado por la asesora</h2>
+    <p class="meta">la asesora confirmó el voucher en el ERP · tarjeta «pago_confirmado» · <a href="24-pago_confirmado.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="24-pago_confirmado.png" alt="¡Pago confirmado!" loading="lazy"><p>¡Pago confirmado, Valeria! Ya validamos tu pago de <b>S/ 890</b>.<br>Aquí tienes tu boleta <b>B001-00418</b>: https://…/boleta.pdf</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Venta editada (datos actualizados)</h2>
+    <p class="meta">Mía editó la venta · tarjeta «venta_editada» · <a href="25-venta_editada.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="25-venta_editada.png" alt="Tus datos quedaron actualizados" loading="lazy"><p>Listo, Valeria, actualicé tu pedido. Así queda:<br><b>Plan:</b> Almuerzo + Cena · 22 días<br><b>Entregas:</b> lunes a viernes, del lun 01/12 al mar 30/12 (22 entregas)<br><b>Precio base:</b> 22 días × S/ 44.50 = S/ 979<br><b>Total:</b> S/ 979<br><br>Ya pagaste <b>S/ 890</b>; falta <b>S/ 89</b>. Puedes pagarlo por Yape, Plin o transferencia y mandarme la foto de la constancia.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía suspende un día</h2>
+    <p class="meta">acción suspender_dia · tarjeta «suspension» · <a href="26-suspension.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="26-suspension.png" alt="Tu día quedó suspendido" loading="lazy"><p>Listo: la entrega del jue 04/12 quedó suspendida y la recibes al final de tu plan, el mar 06/01.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía vuelve a programar una entrega</h2>
+    <p class="meta">acción reactivar_dia · tarjeta «reactivacion» · <a href="27-reactivacion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="27-reactivacion.png" alt="Tu entrega vuelve a estar programada" loading="lazy"><p>Listo: tu entrega del jue 04/12 volvió a quedar programada.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía cambia la dirección de un día</h2>
+    <p class="meta">acción cambiar_direccion_dia · tarjeta «direccion» · <a href="28-direccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="28-direccion.png" alt="Cambiamos la dirección de tu día" loading="lazy"><p>Listo: el vie 05/12 te llevamos tu pedido a OFICINA.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía agrega una restricción</h2>
+    <p class="meta">acción agregar_restriccion · tarjeta «restriccion» · <a href="29-restriccion.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="29-restriccion.png" alt="Agregamos tu restricción" loading="lazy"><p>Listo: agregué «Sin lactosa» a tu ficha. La cocina la aplica desde el jue 04/12.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía ajusta las comidas de un día</h2>
+    <p class="meta">acción ajustar_comidas · tarjeta «comidas» · <a href="30-comidas.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="30-comidas.png" alt="Sumamos una comida a tu día" loading="lazy"><p>Listo: el vie 05/12 te llega también el desayuno.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+
+  <section class="evento">
+    <h2><span class="chip mia">Mía</span> Mía registra una incidencia</h2>
+    <p class="meta">acción crear_incidencia · tarjeta «incidencia» · <a href="31-incidencia.png">PNG</a></p>
+    <div class="chat">
+      <div class="burbuja"><img src="31-incidencia.png" alt="Recibimos tu reporte" loading="lazy"><p>Lamento lo del almuerzo de hoy. Ya lo registré con el ticket <b>INC-2026-0419</b> y tu asesora lo revisa contigo.</p><span class="hora">10:24</span></div>
+      
+    </div>
+    
+  </section>
+</main>
+</body>
+</html>
